@@ -26,13 +26,13 @@ public class Car implements Comparable<Car>
         {
             return -1;
         }
-        else if (this.engineSize == other.engineSize)
+        else if (this.engineSize > other.engineSize)
         {
-            return 0;
+            return 1;
         }
         else
         {
-            return 1;
+            return 0;
         }
     }
 
